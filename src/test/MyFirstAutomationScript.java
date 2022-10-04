@@ -8,7 +8,7 @@ public class MyFirstAutomationScript {
 
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://adactinhotelapp.com");
+		driver.navigate().to("https://adactinhotelapp.com");
 		driver.findElement(By.id("username")).sendKeys("Mukadam23");
 		driver.findElement(By.id("password")).sendKeys("9987050342");
 		driver.findElement(By.id("login")).click();
