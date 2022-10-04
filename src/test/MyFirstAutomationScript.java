@@ -12,6 +12,11 @@ public class MyFirstAutomationScript {
 		driver.findElement(By.id("username")).sendKeys("Mukadam23");
 		driver.findElement(By.id("password")).sendKeys("9987050342");
 		driver.findElement(By.id("login")).click();
+		String actualTitle = driver.getTitle();
+		if(actualTitle.equalsIgnoreCase("Adactin.com - Search Hotel"))
+		{
+			System.out.println("Testcase Passed");
+		}
 	}
 
 }
