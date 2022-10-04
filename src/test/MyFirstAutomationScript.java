@@ -17,6 +17,10 @@ public class MyFirstAutomationScript {
 		{
 			System.out.println("Testcase Passed");
 		}
+		else
+		{
+			System.out.println("Testcase Failed");
+		}
 	}
 
 }
