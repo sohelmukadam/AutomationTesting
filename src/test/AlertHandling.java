@@ -16,6 +16,7 @@ public class AlertHandling {
 		driver.findElement(By.id("alertButton")).click();
         Alert myAlert = driver.switchTo().alert();
         System.out.println(myAlert.getText());
+	System.out.println("Inside the Branch-1");
         myAlert.accept();
 	}
 
